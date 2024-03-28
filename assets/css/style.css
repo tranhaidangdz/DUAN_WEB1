@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* hạ cỡ chữ xuống còn 62.5% */
+}
+
+body {
+    font-size: 1.6rem;
+    /* khôi phục lại cỡ chữ mặc định, lúc này 1 rem=10px => 1.6rem=16px (bd thì 1rem=16px */
+    font-family: 'sora', sans-serif;
+}
