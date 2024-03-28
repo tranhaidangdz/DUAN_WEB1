@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --header-bg: #10375C;
+}
+
 html {
     font-size: 62.5%;
     /* hạ cỡ chữ xuống còn 62.5% */
@@ -11,4 +15,95 @@ body {
     font-size: 1.6rem;
     /* khôi phục lại cỡ chữ mặc định, lúc này 1 rem=10px => 1.6rem=16px (bd thì 1rem=16px */
     font-family: 'sora', sans-serif;
+}
+
+/* =================common: class dung chung ============ */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    /* ta muốn cho khối ở giữa căn giữa trang và khi thu hepj trang web khối đó vẫn cách lề 24px mỗi bên=> dùng hàm calc trừ đi 40px cho 2 bên để khối ở giữa ko chạm lề  */
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 205px;
+    line-height: 60px;
+    background-color: #2e80ce;
+    color: #fff;
+    text-align: center;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 999px;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ==============header ============= */
+.header {
+    padding-top: 30px;
+    background-color: var(--header-bg);
+    min-height: 100vh;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* ta se xoay ngang thanh navbar = display flex */
+.navbar__list {
+    display: flex;
+}
+
+.header__action--login,
+.navbar__link {
+    padding: 8px 21px;
+    color: #c9d2da;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 3.75;
+}
+
+/* tao hieu ứng hover cho menu : */
+.navbar__link:hover,
+.navbar__link--active {
+    text-shadow: 1px 0 0 currentColor;
+    /* khi ta muốn hover vào chữ mà nó đạm lên. VD tăng font weight=> khi to lên nó dãn nở và các chữ xq bị giật . mẹo là ta dùng text shadow để tạo bóng đổ chữ mà ko làm thay đổi kích thước chữ */
+    color: #fff;
+
+}
+
+/* them dau cham . trc chu "home" */
+.navbar__link--active::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: -3;
+    position: relative;
+    right: 8px;
+}
+
+.header__action--signup {
+    min-width: 144px;
+    line-height: 44px;
+    font-size: 1.6rem;
+}
+
+.header__action--login {
+    margin-right: 7px;
 }
