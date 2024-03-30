@@ -38,7 +38,8 @@
     <title>Shine smile</title>
 </head>
 
-<body style="height: 90000px;">
+<body style="height: 50000px;">
+    <!-- header -->
     <header class="header">
         <div class="container">
             <div class="header-top">
@@ -67,7 +68,7 @@
                     <a href="" class="btn header__action--signup">Sign Up</a>
                 </div>
             </div>
-            <!-- hero -->
+            <!-- hero :chính là phần ND mô tả qua trang web ngay dưới phần header  và dưới thanh navbar-->
             <section class="hero">
                 <!-- hero left -->
                 <section class="hero__content">
@@ -89,6 +90,64 @@
             </section>
         </div>
     </header>
+    <!-- main: phần ND ở giữa header và footer -->
+    <main>
+        <!-- our service -->
+        <section class="service">
+            <div class="container">
+                <h2 class="service__heading section-heading">Our services</h2>
+                <p class="service__desc section-desc">Exceptional dental care for all ages. Your great smile begins with
+                    a great dentist.</p>
+                <div class="service__row">
+                    <!-- service left -->
+                    <figure>
+                        <img src="./assets/img/hero-3.png" alt="Our services" class="service__img">
+                    </figure>
+                    <!-- service right -->
+                    <div class="service__list">
+                        <!-- item1: trong 1 list có nhiều item và mỗi item này sẽ là 1 phần trong líst nên ta có thể dùng thẻ section(phần) để bao lấy -->
+                        <section class="service-item">
+                            <div class="service-item__icon">
+                                <img src="./assets/img/service-2.svg" alt="">
+                            </div>
+                            <div class="service-item__body">
+                                <div class="service-item__heading">Oral Surgery</div>
+                                <div class="service-item__desc">Everything you expect and then some. Cleanings,
+                                    fillings,
+                                    and x-rays.
+                                </div>
+                            </div>
+                        </section>
+                        <!-- item2: trong 1 list có nhiều item và mỗi item này sẽ là 1 phần trong líst nên ta có thể dùng thẻ section(phần) để bao lấy -->
+                        <section class="service-item">
+                            <div class="service-item__icon">
+                                <img src="./assets/img/service-2.svg" alt="" style="width: 22px;height: 24px;">
+                            </div>
+                            <div class="service-item__body">
+                                <div class="service-item__heading">Wisdom Teeth Removal</div>
+                                <div class="service-item__desc">Everything you expect and then some. Cleanings,
+                                    fillings,
+                                    and x-rays.</div>
+                            </div>
+                        </section>
+                        <!-- item3: trong 1 list có nhiều item và mỗi item này sẽ là 1 phần trong líst nên ta có thể dùng thẻ section(phần) để bao lấy -->
+                        <section class="service-item">
+                            <div class="service-item__icon">
+                                <img src="./assets/img/service-2.svg" alt="">
+                            </div>
+                            <div class="service-item__body">
+                                <div class="service-item__heading">Preventative Dentistry</div>
+                                <div class="service-item__desc">Everything you expect and then some. Cleanings,
+                                    fillings,
+                                    and x-rays.</div>
+                            </div>
+                        </section>
+                        <a href="#" class="btn section__btn">All services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
