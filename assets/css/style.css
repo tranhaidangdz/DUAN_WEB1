@@ -64,6 +64,32 @@ a {
     line-height: 1.67;
 }
 
+/* control btn */
+.control {
+    display: flex;
+    column-gap: 18px;
+    text-align: center;
+}
+
+.control__btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #575f66;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.control__btn:hover {
+    background: #2e80ce;
+    border-color: #2e80ce;
+    color: #fff;
+}
+
 /* ==============header ============= */
 .header {
     padding-top: 30px;
@@ -388,4 +414,71 @@ a {
 
 .about-content__btn {
     margin-top: 38px;
+}
+
+/* ================ team =================== */
+.team {
+    padding: 85px 0;
+}
+
+.team-header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team__cta {
+    margin-top: 38px;
+}
+
+.team__list {
+    display: grid;
+    margin-top: 70px;
+    column-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team-item__thumb {
+    height: 290px;
+    min-width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+.team-item__img--bg {
+    color: #eaf6ff;
+    border-radius: 6px;
+    padding-top: 28px;
+    overflow: hidden;
+}
+
+.team-item:hover .team-item__thumb {
+    transform: scale(1.1);
+    /* khi ta di chuột vào các khối team thì các bức ảnh (là class con trong đó) sẽ dc phóng to lên 1.1 lần(sd hàm scale) */
+}
+
+.team-item__name {
+    color: #10375C;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.team-item__desc {
+    color: #10375C;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+
+}
+
+.team__control {
+    display: flex;
+    justify-content: center;
+}
+
+.control__btn--team5 {
+    rotate: 180deg;
 }
