@@ -214,7 +214,7 @@ a {
 
 .service__desc {
     width: 468px;
-    margin: 0 auto;
+    margin: 18px auto 0;
 }
 
 .service__row {
@@ -284,5 +284,61 @@ a {
 
 .section__btn {
     margin-top: 55px;
+}
 
+/* ================== work ============================ */
+.work {
+    padding: 100px 0;
+    background-color: #f6fbff;
+}
+
+.work__desc {
+    width: 468px;
+}
+
+.work__list {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.work-item {
+    padding: 43px;
+    border-radius: 4px;
+    background: #fff;
+    border: 16px solid #eaf6ff;
+    transition: 0.25s;
+}
+
+.work-item:hover {
+    border-color: #2e80ce;
+    transform: translateY(-16px);
+    /* khi ta hover nó sẽ dịch lên bên trên theo trục dọc 16px (truyền vào gtri âm là lên trên , tranform theo Y tức là theo chiều dọc) */
+}
+
+.work-item__heading {
+    margin-top: 18px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+
+}
+
+.work-item__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.work-item__more {
+    margin-top: 18px;
+    color: #2e80ce;
+    font-size: 1.6rem;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.75;
 }
